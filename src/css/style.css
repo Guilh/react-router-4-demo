@@ -1,0 +1,259 @@
+/* ================================= 
+  WEB FONTS
+==================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+/* ================================= 
+  ELEMENT STYLES
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #576366;
+  background: #5fcf80;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  color: #404040;
+  font-size: 1.6em;
+  margin-bottom: 1.25em;
+}
+h3 {
+  margin-bottom: 1.5em;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #3b80d1;
+}
+hr {
+  border: 0;
+  height: 0;
+  margin: 2.3em 0 2em 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* FORM & BUTTON STYLES -------- */
+
+.home a,
+input,
+button {
+  padding: .5em;
+  font-size: .9em;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  border: solid 1px #ccc;
+  outline: none;
+}
+button {
+  color: white;
+  background: #4188dc;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  border-color: rgba(0,0,0, .1);
+}
+
+/* ================================= 
+  LAYOUT & PAGE STYLES
+==================================== */
+
+.container {
+  width: 95%;
+  max-width: 780px;
+  padding-bottom: 2em;
+  margin: 0 auto 2em;
+  background: #fff;
+  border-radius: .5em;
+  box-shadow: 0 3px rgba(0,0,0, .1);
+  overflow: hidden;
+}
+header {
+  background: #edeff0;
+  margin-bottom: 2em;
+}
+.main-content {
+  padding: 1em 2em;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.course {
+  margin-bottom: 1em;
+}
+
+/* IMAGES -------- */
+
+.course-img {
+  width: 70px;
+}
+.teacher-img {
+  width: 100%;
+  border-radius: .3em;
+}
+.not-found {
+  text-align: center;
+}
+
+/* MAIN NAV -------- */
+
+.main-nav a {
+  font-size: .95em;
+  color: #222;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  transition: .2s;
+}
+.main-nav a:hover,
+.main-nav .active {
+  color: #fff;
+  background: #3b80d1;
+}
+
+/* COURSE NAV -------- */
+
+.course-nav li {
+  display: inline-block;
+}
+.course-nav li + li {
+  margin-left: .6em;
+}
+.course-nav a {
+  font-size: .85em;
+  color: #7d7d7d;
+  padding: .2em .8em;
+  border-radius: .25em;
+  background: #eaebeb;
+  transition: .2s;
+}
+.course-nav a:hover,
+.course-nav a.active {
+  color: #fff;
+  background: #39add1;
+}
+
+/* ICONS -------- */
+
+.icn-logo {
+  background: #54606b;
+  color: #fff;
+}
+.icn-logo i {
+  font-size: 2.45em;
+  line-height: 0;
+  margin-top: 30px;
+}
+.icn-error {
+  font-size: 3.2em;
+  margin-bottom: .25em;
+}
+
+/* ================================= 
+  MEDIA QUERIES
+==================================== */
+
+@media (min-width: 0) and (max-width: 768px) { 
+  body {
+    padding-top: .8em;
+  }
+  .home a {
+    border-color: transparent;
+  }
+   .icn-logo {
+     display: block;
+     width: 100%;
+     text-align: center;
+     padding-bottom: 4px;
+   }
+   .main-nav a {
+     border-top: 2px solid transparent;
+     border-bottom: 2px solid transparent;
+   }
+   .main-nav a:hover {
+     border-color: rgba(0,0,0, .1);
+   }
+   .courses h2 {
+     margin-bottom: 0;
+   }
+   .course-nav {
+     display: block;
+     margin: 1.5em 0 3.2em;
+   }
+   .home a,
+   input,
+   button {
+     display: block;
+     width: 100%;
+     margin-bottom: 1em;
+   }
+}
+@media (min-width: 769px) {
+  body {
+    padding-top: 3em;
+  }
+  .home a {
+    border-color: #3b80d1;
+  }
+  .media img,
+  .media > div,
+  .teacher {
+    float: left;
+  }
+  .media > div {
+    width: 85.1%;
+    margin-left: 1.5em;
+  } 
+  .teacher {
+    width: 48.73%;
+    margin-bottom: 1.5em;
+  }
+  .teacher + .teacher {
+    margin-left: 2.54%;
+  }
+  .teacher:nth-child(2n+3) {
+    clear: left;
+    margin-left: 0;
+  }
+  /* MAIN NAV -------- */
+  .icn-logo {
+    margin-right: auto;
+    padding: 0 2em;
+  }
+  header,
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-nav a {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    padding: 1.25em 1.5em;
+  }
+  .main-nav a:hover {
+    border-color: rgba(0,0,0, .1);
+  }
+  /* COURSE NAV -------- */
+  .course-nav {
+    float: right;
+  } 
+  .courses h2 {
+    float: left;
+  }
+}
