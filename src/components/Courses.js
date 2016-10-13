@@ -17,9 +17,9 @@ const Courses = ({ pathname }) => (
     </div>
 
     <Redirect to={`${pathname}/html`} />
-    <Match pattern={`${pathname}/html`} render={() => <CourseContainer data={CourseList.HTML} /> } />
-    <Match pattern={`${pathname}/css`} render={() => <CourseContainer data={CourseList.CSS} /> } />
-    <Match pattern={`${pathname}/javascript`} render={() => <CourseContainer data={CourseList.JS} /> } />
+    <Match pattern={`${pathname}/html`} render={ () => <CourseContainer data={CourseList.HTML} /> } />
+    <Match pattern={`${pathname}/css`} render={ () => <CourseContainer data={CourseList.CSS} /> } />
+    <Match pattern={`${pathname}/javascript`} render={ () => <CourseContainer data={CourseList.JS} /> } />
   </div>
 );
 
