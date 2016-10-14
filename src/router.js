@@ -1,3 +1,7 @@
+//////////////////////////////////////////////
+//  OLD ROUTE CONFIG FROM v2 (not in use)
+/////////////////////////////////////////////
+
 // Libs
 import React from 'react';
 import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
